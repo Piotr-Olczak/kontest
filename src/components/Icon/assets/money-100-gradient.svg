@@ -1,0 +1,18 @@
+
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="69.0923445%" y1="20.4142012%" x2="40.7527192%" y2="59.4528742%" id="linearGradient-1">
+            <stop stop-color="#E27F20" offset="0%"></stop>
+            <stop stop-color="#935293" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Trafonline.pl-_-design_concept-[inner-2]" transform="translate(-1179.000000, -711.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-3-Copy-2" transform="translate(322.000000, 710.000000)">
+                <g id="outline-money-24px" transform="translate(857.000000, 1.000000)">
+                    <path d="M16.9,15 L20.8,15 C21.515,15 22.1,14.4375 22.1,13.75 L22.1,6.25 C22.1,5.5625 21.515,5 20.8,5 L16.9,5 C16.185,5 15.6,5.5625 15.6,6.25 L15.6,13.75 C15.6,14.4375 16.185,15 16.9,15 Z M18.2,7.5 L19.5,7.5 L19.5,12.5 L18.2,12.5 L18.2,7.5 Z M9.1,15 L13,15 C13.715,15 14.3,14.4375 14.3,13.75 L14.3,6.25 C14.3,5.5625 13.715,5 13,5 L9.1,5 C8.385,5 7.8,5.5625 7.8,6.25 L7.8,13.75 C7.8,14.4375 8.385,15 9.1,15 Z M10.4,7.5 L11.7,7.5 L11.7,12.5 L10.4,12.5 L10.4,7.5 Z M3.9,5 L6.5,5 L6.5,15 L3.9,15 L3.9,5 Z M0,0 L0,20 L26,20 L26,0 L0,0 Z M23.4,17.5 L2.6,17.5 L2.6,2.5 L23.4,2.5 L23.4,17.5 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

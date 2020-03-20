@@ -1,0 +1,46 @@
+{
+  "short_name": "Traf Online",
+  "name": "Traf Online",
+  "icons": [
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/__data/assets/git_bridge/0013/9013/build/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/ekonik",
+  "display": "standalone",
+  "theme_color": "#935293",
+  "background_color": "#ffffff",
+  "scope": "/"
+}

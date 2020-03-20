@@ -1,0 +1,87 @@
+.edit-player-data-form {
+  &__date-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .form-element {
+      width: 30%;
+    }
+    .form-element__label {
+      width: 100%;
+      margin-top: 0;
+    }
+    .form-element__error-message {
+      margin-top: -22px;
+    }
+  }
+  .form-group-title {
+    color: $mine-shaft-color;
+    font-weight: $font-weight-bold;
+  }
+  .form-elements__edit-player-declarations {
+    margin-top: 40px;
+  }
+  .form-group--edit-password {
+    margin-top: 40px;
+    .form-status {
+      width: 100%;
+      display: block;
+    }
+    @include rwd-from($breakpoint-s) {
+      > div {
+        width: 100%;
+        :nth-of-type(3) {
+          margin-left: calc(50% + 10px);
+        }
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > div {
+          width: calc(50% - 10px);
+        }
+        > button {
+          margin-left: calc(100% - 200px);
+          width: 200px;
+        }
+      }
+    }
+  }
+  @include rwd-from($breakpoint-s) {
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .form-group--address {
+      .form-element {
+        width: calc(25% - 10px);
+      }
+      .form-element:nth-of-type(3n + 1) {
+        width: calc(50% - 10px);
+      }
+    }
+    .form-group-title {
+      width: 100%;
+    }
+    .form-element {
+      width: calc(50% - 10px);
+    }
+    .form-element__label--funds-source {
+      margin-top: 32px;
+    }
+    .register-form__date-wrapper {
+      width: calc(50% - 10px);
+    }
+    .form-element__date-select {
+      width: 30%;
+    }
+    .form-element--full {
+      width: 100%;
+      input[type='checkbox'] + label {
+        font-weight: $font-weight-regular;
+      }
+    }
+  }
+}

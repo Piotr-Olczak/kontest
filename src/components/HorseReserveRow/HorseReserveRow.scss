@@ -1,0 +1,28 @@
+.reserve {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include rwd-from($breakpoint-m) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  p {
+    margin: 1em 0;
+    font-weight: 500;
+    @include rwd-from($breakpoint-m) {
+      margin: 1.75em 2em 0 0;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    button {
+      flex: 1;
+      @include rwd-from($breakpoint-m) {
+        flex: initial;
+        width: 20px;
+        box-sizing: content-box;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mode": "file",
+  "out": "docs",
+  "excludeExternals": true,
+  "exclude": "**/*.test.ts",
+  "readme": "none",
+  "excludeNotExported": "true"
+}

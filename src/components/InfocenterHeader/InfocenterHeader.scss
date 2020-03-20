@@ -1,0 +1,70 @@
+.infocenter-header {
+  color: $white-color;
+  &__race-name {
+    font-size: 30px;
+    font-weight: $font-weight-bold;
+    margin: 20px 24px;
+  }
+  &__main-block {
+    font-size: 13px;
+    @include rwd-from($breakpoint-l) {
+      display: flex;
+      width: 100%;
+    }
+  }
+  &__main-info {
+    background-color: $zest-color;
+    padding: 10px 24px;
+    @include rwd-from($breakpoint-l) {
+      flex: 1;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+    }
+  }
+  &__race-metadata {
+    p {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 10px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  &__track-info {
+    background-color: $strikemaster-2-color;
+    padding: 10px 24px;
+    position: relative;
+    @include rwd-from($breakpoint-l) {
+      &::before {
+        content: '';
+        height: 100%;
+        width: 30px;
+        background-color: $strikemaster-2-color;
+        display: block;
+        position: absolute;
+        left: -15px;
+        top: 0;
+        transform: skew(-10deg, 0);
+      }
+    }
+  }
+  &__description-block {
+    background-color: $mine-shaft-darker-color;
+    padding: 24px;
+    h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  strong {
+    text-transform: uppercase;
+  }
+}

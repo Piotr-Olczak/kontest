@@ -1,0 +1,12 @@
+.register-confirmation {
+  margin: 60px auto 30px auto;
+  max-width: 600px;
+  h2 {
+    margin-bottom: 40px;
+    font-size: 21px;
+    font-weight: $font-weight-bold;
+  }
+  &__navigation {
+    text-align: right;
+  }
+}

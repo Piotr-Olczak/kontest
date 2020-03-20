@@ -1,0 +1,57 @@
+.single-bet {
+  display: flex;
+  margin: 1em 0;
+  flex-direction: column;
+
+  @include rwd-from($breakpoint-m) {
+    flex-direction: row;
+  }
+
+  &__content {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid $dimWhiteColor;
+    box-shadow: 0 8px 20px rgba(#000, 0.04);
+
+    @include rwd-from($breakpoint-m) {
+      max-width: calc(
+        100% - #{$bet-summary-width-m} - #{$bet-summary-margin-left-m}
+      );
+    }
+  }
+
+  &__summary {
+    width: 100%;
+    margin: 0 0 1em 0;
+
+    @include rwd-from($breakpoint-m) {
+      margin-left: $bet-summary-margin-left-m;
+      width: $bet-summary-width-m;
+    }
+  }
+}
+
+.bet-content {
+  border-radius: 5px;
+
+  &__header {
+    padding: 1em;
+    border-bottom: 1px solid $dimWhiteColor;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__body {
+    padding: 1em;
+
+    &__alert-info {
+      color: red;
+      font-weight: bold;
+    }
+  }
+}

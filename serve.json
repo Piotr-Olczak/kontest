@@ -1,0 +1,17 @@
+{
+  "public": "build",
+  "rewrites": [
+    {
+      "source": "__data/assets/git_bridge/0013/9013/build/static/:assetType/:id",
+      "destination": "static/:assetType/:id"
+    },
+    {
+      "source": "__data/assets/git_bridge/0013/9013/build/offline",
+      "destination": "offline.html"
+    },
+    {
+      "source": "__data/assets/git_bridge/0013/9013/build/:id",
+      "destination": ":id"
+    }
+  ]
+}

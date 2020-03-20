@@ -1,0 +1,54 @@
+$horsePopupMobileBreakpoint: 600;
+
+.horse-popup {
+  .ant-modal-header {
+    background-color: $eggplant-color;
+    position: relative;
+    top: -4px;
+  }
+  .ant-modal-title {
+    color: $white-color;
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+  }
+  .anticon-close {
+    color: $white-color;
+  }
+  &__data-wrapper {
+    @include rwd-from($horsePopupMobileBreakpoint) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__data-group {
+    @include rwd-from($horsePopupMobileBreakpoint) {
+      width: 33%;
+      &:nth-of-type(2) {
+        width: 66%;
+      }
+    }
+    h2 {
+      font-weight: $font-weight-bold;
+      color: $eggplant-color;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
+  &__last-races {
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-top: 24px;
+    h2 {
+      background-color: $alto-color;
+      color: $mine-shaft-color;
+      font-weight: $font-weight-bold;
+      padding: 12px 24px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+}

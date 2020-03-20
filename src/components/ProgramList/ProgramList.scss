@@ -1,0 +1,31 @@
+.program-list {
+  overflow-x: auto;
+  a {
+    color: $mine-shaft-color;
+    &:hover {
+      color: $strikemaster-color;
+    }
+  }
+}
+
+.program-list__item-link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  img {
+    margin-right: 12px;
+  }
+  span {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.program-list__item-place {
+  color: $strikemaster-color;
+  font-size: 18px;
+}
+
+.program-list__item-date {
+  font-size: 18px;
+}

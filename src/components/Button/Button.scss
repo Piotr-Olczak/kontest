@@ -1,0 +1,87 @@
+.btn {
+  border: 0;
+  margin-left: 6px;
+  margin-right: 6px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: $font-weight-bold;
+  transition: 0.2s ease-in color;
+  background-color: transparent;
+  z-index: 1;
+  &:disabled {
+    opacity: 0.4;
+  }
+  &::before {
+    position: absolute;
+    border: 2px solid $strikemaster-color;
+    display: block;
+    transform: skewX(-10deg);
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.2s ease-in background-color;
+    z-index: -1;
+  }
+  .spinner {
+    margin-left: 1em;
+  }
+  &--empty {
+    color: $strikemaster-color;
+
+    &::before {
+      border: 2px solid $strikemaster-color;
+    }
+
+    &:hover {
+      color: $white-color;
+
+      &::before {
+        background-color: $strikemaster-color;
+      }
+    }
+  }
+
+  &--empty-light {
+    color: $white-color;
+
+    &::before {
+      border: 2px solid $white-color;
+    }
+
+    &:hover {
+      &::before {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &--full {
+    color: $white-color;
+
+    &::before {
+      border-width: 0;
+      background-color: $strikemaster-color;
+      transition: none;
+      background-image: linear-gradient(
+        to right,
+        $strikemaster-color 0%,
+        $carrot-orange-color 100%
+      );
+    }
+
+    &:hover {
+      &::before {
+        background: $strikemaster-color;
+      }
+    }
+  }
+
+  &--fullWidth {
+    width: calc(100% - 12px); // calculation beacuse of skwed
+  }
+}

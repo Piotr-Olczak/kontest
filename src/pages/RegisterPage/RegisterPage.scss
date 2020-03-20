@@ -1,0 +1,5 @@
+.register-wrapper {
+  @include rwd-from-width-height($breakpoint-l, $breakpoint-l-height) {
+    display: flex;
+  }
+}

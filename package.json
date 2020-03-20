@@ -1,0 +1,98 @@
+{
+  "name": "ekonik-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@microsoft/applicationinsights-react-js": "^2.1.1",
+    "@microsoft/applicationinsights-web": "^2.1.1",
+    "@types/classnames": "^2.2.7",
+    "@types/jest": "24.0.12",
+    "@types/node": "12.0.0",
+    "@types/react": "16.8.16",
+    "@types/react-dom": "16.8.4",
+    "@types/react-redux": "^7.0.8",
+    "@types/react-router-dom": "^4.3.3",
+    "@types/sanitize-html": "^1.20.2",
+    "@types/uuid": "^3.4.4",
+    "@types/yup": "^0.26.13",
+    "antd": "^3.19.3",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "env-cmd": "^9.0.2",
+    "formik": "^1.5.4",
+    "husky": "^2.2.0",
+    "iban": "0.0.12",
+    "lint-staged": "^8.1.6",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^1.17.0",
+    "query-string": "^6.5.0",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.2",
+    "react-dom": "^16.8.6",
+    "react-ios-pwa-prompt": "konradhalo/react-ios-pwa-prompt#fix/overlay-styles",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "react-testing-library": "^7.0.0",
+    "redux": "^4.0.1",
+    "serve": "^11.2.0",
+    "source-map-explorer": "^2.1.0",
+    "terser": "^4.3.8",
+    "sanitize-html": "^1.20.1",
+    "typescript": "3.4.5",
+    "yup": "^0.27.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook",
+    "build": "react-scripts build",
+    "build:uat": "env-cmd -f .env.uat --use-shell npm run build",
+    "lint:fix": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}'",
+    "sw-min": "terser --compress toplevel,sequences=false,drop_console=true --mangle --output ./build/custom-service-worker.js -- ./build/custom-service-worker.js",
+    "serve": "serve",
+    "generate-docs": "typedoc --json ./typedocs.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-info": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-import-group-ordering": "^2.1.2",
+    "tslint-react": "^4.0.0",
+    "typedoc": "^0.15.0"
+  }
+}

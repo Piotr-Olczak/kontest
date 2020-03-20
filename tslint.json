@@ -1,0 +1,39 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier", "tslint-import-group-ordering"],
+  "linterOptions": {"exclude": ["config/**/*.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js"]},
+  "rules": {
+    "interface-name": false,
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": false,
+    "import-group-ordering": {
+      "severity": "warning",
+      "options": {
+        "imports-groups": [
+          {
+            "name": "dependencies"
+          },
+          {
+            "name": "project"
+          },
+          {
+            "name": "other"
+          }
+        ],
+        "matching-rules": [
+          {
+            "type": "dependencies",
+            "imports-group": "dependencies",
+            "disable-native-nodejs-modules": true,
+            "from-package.json": true
+          },
+          {
+            "type": "project",
+            "matches": "^assets|^reducers|^schemas|^scss|^components*|^schemas|^helpers|^interfaces|^pages",
+            "imports-group": "other"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.timer {
+  background-color: #e3e3e3;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  &__icon {
+    background-image: url('~assets/svg/shape-hex-transparent.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em;
+  }
+  strong {
+    margin-left: 0.5em;
+  }
+}

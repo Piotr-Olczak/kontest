@@ -1,0 +1,79 @@
+.bet-confirm {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column-reverse;
+  padding: 3.5em 1em 1em;
+  background-color: $wild-sand-color;
+  border-radius: 5px;
+  margin: -24px;
+  color: $dark-color;
+
+  @include rwd-from($breakpoint-m) {
+    padding: 8em 5em;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  &__coupon {
+    .single-coupon {
+      border-radius: 5px;
+      box-shadow: 0 15px 20px rgba(#000, 0.13);
+    }
+  }
+
+  &__content {
+    margin-top: 2em;
+    font-size: 12px;
+
+    @include rwd-from($breakpoint-m) {
+      margin-top: 0;
+      margin-left: 2rem;
+      font-size: 24px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+
+    @include rwd-from($breakpoint-m) {
+      font-size: 27px;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @include rwd-from($breakpoint-m) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    > * {
+      margin: 1em 0;
+
+      @include rwd-from($breakpoint-m) {
+        margin: 0 1em;
+      }
+    }
+  }
+
+  .slip-coupon {
+    @include rwd-from($breakpoint-m) {
+      width: 300px;
+    }
+  }
+
+  // disable "cuts" on edges
+  .single-coupon,
+  .single-coupon__title {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  @include rwd-from($breakpoint-m) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  &__mobile-nav {
+    display: block;
+    padding: 0 1em 1em 1em;
+    @include rwd-from($breakpoint-m) {
+      display: none;
+    }
+  }
+  &--main {
+    .settings {
+      &__panel {
+        display: block;
+      }
+      &__body {
+        display: none;
+      }
+    }
+  }
+  &-content {
+    padding: 1em;
+  }
+  &-nav {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    @include rwd-from($breakpoint-m) {
+      background-color: transparent;
+      border: none;
+    }
+    &__list {
+      padding: 0;
+      margin: 0;
+    }
+    &__element {
+      list-style: none;
+      padding: 0.5em 1em;
+      margin: 0;
+      color: $base-color;
+      border-bottom: 1px solid #efefef;
+      position: relative;
+      @include rwd-from($breakpoint-m) {
+        border-bottom: none;
+        padding: 0;
+      }
+      a {
+        padding: 0.5em 0;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+        transition: all 0.2s ease-out;
+        &.settings-nav__element--active {
+          color: $primary-color;
+        }
+      }
+      img {
+        margin-right: 1em;
+      }
+    }
+    &__arrow {
+      width: 20px;
+      position: absolute;
+      right: 1em;
+      path {
+        fill: red;
+      }
+      @include rwd-from($breakpoint-m) {
+        display: none;
+      }
+    }
+  }
+  &-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(#000, 0.04);
+    border: 1px solid $dimWhiteColor;
+    max-width: 100%;
+    @include rwd-from($breakpoint-m) {
+      flex-direction: row;
+    }
+    &__content {
+      flex-grow: 2;
+    }
+    &__header {
+      padding: 1em;
+      border-bottom: 1px solid #efefef;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      img {
+        margin-right: 1em;
+      }
+    }
+  }
+  &-faq-list {
+    width: 100%;
+    background-color: $wild-sand-color;
+    padding: 1em;
+    @include rwd-from($breakpoint-m) {
+      width: 300px;
+    }
+    &__title {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 1em;
+      }
+    }
+  }
+  &__panel {
+    width: 100%;
+    margin-bottom: 1em;
+    display: none;
+    @include rwd-from($breakpoint-m) {
+      width: 300px;
+      margin-bottom: 0;
+      display: block;
+    }
+  }
+}

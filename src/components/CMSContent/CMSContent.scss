@@ -1,0 +1,81 @@
+.cms-content {
+  [id]::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-top: -120px;
+    visibility: hidden;
+  }
+  font-size: 1em;
+  h1 {
+    font-size: 2.2em;
+    font-weight: $font-weight-medium;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: $font-weight-medium;
+  }
+  h3 {
+    font-size: 1.8em;
+    font-weight: $font-weight-medium;
+  }
+  h4 {
+    font-size: 1.6em;
+    font-weight: $font-weight-medium;
+  }
+  h5 {
+    font-size: 1.4em;
+    font-weight: $font-weight-medium;
+  }
+  h6 {
+    font-size: 1em;
+    font-weight: $font-weight-medium;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5em 0;
+    font-size: 12px;
+  }
+  thead {
+    display: table-header-group;
+  }
+
+  caption {
+    font-size: 12.8px;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+  th {
+    padding: 20px 10px;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid #dedddc;
+  }
+
+  td {
+    font-weight: 300;
+    display: table-cell;
+    padding: 20px 10px;
+    position: relative;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,147 @@
+// Standard imports
+@import '~normalize.css/normalize.css';
+@import '~antd/dist/antd.css';
+@import 'mixins';
+@import 'variables';
+@import 'ant_custom';
+@import 'fonts';
+@import 'forms';
+
+// Modules imports
+@import '~components/Button/Button';
+@import '~components/StatusHandler/StatusHandler';
+@import '~components/FormGroup/FormGroup';
+@import '~components/FormElements/FormElements';
+@import '~pages/RegisterPage/RegisterPage';
+@import '~components/Register/RegisterCookies';
+@import '~components/Register/RegisterForm';
+@import '~components/Register/RegisterHeader';
+@import '~components/Register/RegisterSteps';
+@import '~components/RegisterConfirmation/RegisterConfirmation';
+@import '~components/RemindPassword/RemindPasswordForm/RemindPasswordForm';
+@import '~pages/LoginPage/LoginPage';
+@import '~components/Login/LoginHeader/LoginHeader';
+@import '~components/Login/LoginForm/LoginForm';
+@import '~components/Login/LoginBlend/LoginBlend';
+@import '~components/BasicLayout/BasicLayout';
+@import '~components/BasicLayout/MenuButton/MenuButton';
+@import '~pages/RemindPasswordPage/RemindPasswordPage';
+@import '~components/BasicLayout/LogoutBtn/LogoutBtn';
+@import '~components/Container/Container';
+@import '~components/BasicLayout/SubHeader/SubHeader';
+@import '~components/Timer/Timer';
+@import '~components/SettingsPageLayout/SettingsPageLayout';
+@import '~components/SettingsPageLayout/SettingsFaq/SettingsFaq';
+@import '~components/UniversalWrapper/UniversalWrapper';
+@import '~components/RaceDay/RaceDay';
+@import '~components/MultiRaceDay/MultiRaceDay';
+@import '~pages/RacesPage/RacesPage';
+@import '~pages/SingleRaceBetPage/SingleRaceBetPage';
+@import '~pages/MultiRaceBetPage/MultiRaceBetPage';
+@import '~components/BtnColor/BtnColor';
+@import '~components/Spinner/Spinner';
+@import '~components/LoadingScreen/LoadingScreen';
+@import '~components/SingleRaceBet/SingleBetHorsesSelection/SingleBetHorsesRow/SingleBetHorsesRow';
+@import '~components/SingleRaceBet/BetTypeList/BetTypeList';
+@import '~components/SingleRaceBetSummary/SingleRaceBetSummary';
+@import '~components/SingleBetCoupon/SingleBetCoupon';
+@import '~components/SlipCoupon/SlipCoupon';
+@import '~components/MultipliersRow/MultipliersRow';
+@import '~components/SingleRaceBetSummary/BetConfirm/BetConfirm';
+@import '~components/DepositForm/DepositForm';
+@import '~components/HorseReserveRow/HorseReserveRow';
+@import '~pages/UserBetsPage/UserBetsPage';
+@import '~pages/TransactionPage/TransactionPage';
+@import '~components/FinancialOperations/FinancialOperations';
+@import '~components/EditPlayerData/EditPlayerData.scss';
+@import '~pages/ResponsibleGamePage/ResponsibleGamePage';
+@import '~components/MultiRaceBet/MultiRaceBet';
+@import '~components/LivePlayer/LivePlayer';
+@import '~components/InfocenterHeader/InfocenterHeader.scss';
+@import '~components/InfocenterHorsesTable/InfocenterHorsesTable';
+@import '~components/InfocenterHorsePopup/InfocenterHorsePopup.scss';
+@import '~components/PaymentPredictionsList/PaymentPredictionsList';
+@import '~components/ProgramList/ProgramList';
+@import '~components/CMSContent/CMSContent';
+
+// Box size all the things
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font-family;
+  font-size: #{$base-font-pixel}px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $wild-sand-color;
+  color: #000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: $eggplant-color;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.link-external {
+  &::after {
+    content: '';
+    background-image: url('~assets/svg/icon-link-external.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 13px 8px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.responsive-table {
+  overflow-x: auto;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $dark-color;
+  line-height: 100%;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,80 @@
+.multi-race-bet {
+  position: relative;
+
+  .ant-tabs-nav-container {
+    overflow: visible;
+  }
+
+  .ant-tabs-bar {
+    margin-left: 115px;
+    border-bottom: 0;
+  }
+
+  .ant-tabs {
+    font-size: 16px;
+    color: inherit;
+    margin: 0 -1em;
+  }
+
+  .ant-tabs-nav {
+    .ant-tabs-tab {
+      background: $multiRaceBet-tabBg;
+      color: #fff;
+      border: 0;
+      border-radius: 5px;
+      margin-right: 15px;
+
+      &-active {
+        font-weight: normal;
+        background: $multiRaceBet-tabBg--active;
+      }
+    }
+  }
+
+  .ant-tabs-ink-bar {
+    opacity: 0;
+  }
+
+  .bet-content__body__alert-info {
+    padding: 0 1em;
+  }
+
+  .single-horse-row {
+    margin: 0;
+  }
+
+  .reserve {
+    padding: 0 1em;
+  }
+
+  &__tabs-bar-prefix {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    line-height: 45px;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.multi-race-bet-tab {
+  text-align: center;
+
+  &--invalid {
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      border: 4px solid $multiRaceBet-tabBg--invalid;
+      border-radius: 5px;
+      z-index: 2;
+    }
+  }
+
+  &__track {
+    font-weight: $font-weight-medium;
+  }
+}

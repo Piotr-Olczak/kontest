@@ -1,0 +1,97 @@
+// Base font
+$base-font-scale: 1; // The font scale multiplier (e.g. 2 = 32px/2em/2rem)
+$base-font-pixel: 16; // Used for font size calculations & conversions
+$base-font-color: #222;
+$base-font-family: 'IBM Plex Sans Condensed', 'Arial', sans-serif;
+$mono-font-family: 'IBM Plex Mono', monospace;
+
+// Font settings
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$mono-fot-weight-semibold: 600;
+
+// Design colors (from Adobe XD)
+$white-color: #ffffff;
+$wild-sand-color: #f7f7f7;
+$bon-jour-color: #e6e2e2;
+$scorpion-color: #5a5a5a;
+$dune-color: #2d2a29;
+$black-color: #000000;
+$mine-shaft-color: #242424;
+$mine-shaft-darker-color: #2f2f2f;
+$eggplant-color: #623c62;
+$strikemaster-color: #925492;
+$strikemaster-2-color: #875187;
+$carrot-orange-color: #f18d1f;
+$zest-color: #e27f20;
+$apple-color: #369f3a;
+$puerto-rico: #43b9a2;
+$jungle-green-color: #28c74d;
+$tamarillo: #9d1030;
+$dark-color: #3e3e3e;
+$gallery-color: #f0f0f0;
+$wild-sand-color: #f4f4f4;
+$alto-color: #d9d9d9;
+
+// Colors
+$base-color: $dune-color;
+$primary-color: $strikemaster-color;
+$secondary-color: $carrot-orange-color;
+$third-color: $scorpion-color;
+
+$error-color: $tamarillo;
+$success-color: $apple-color;
+
+// Breakpoints
+$breakpoint-s: 768;
+$breakpoint-m: 1024;
+$breakpoint-l: 1280;
+$breakpoint-l-height: 770;
+
+// Container widths
+$container-m: 1000px;
+$container-l: 1200px;
+
+$bet-summary-width-m: 300px;
+$bet-summary-margin-left-m: 2em;
+
+// Paddings
+$standard-lr-padding: 24px;
+
+$blueShadowColor: #253db4;
+
+$btnTertiary: #fff;
+$btnTertiaryGradientTop: #848484;
+$btnTertiaryGradientBottom: #4d4d4d;
+$btnTertiaryGradientBackground: linear-gradient(
+  $btnTertiaryGradientTop,
+  $btnTertiaryGradientBottom
+);
+
+$btnPrimary: #222c65;
+$btnPrimaryHover: #4358ff;
+$btnPrimaryActive: #4358ff;
+
+$btnSecondary: #205457;
+$btnSecondaryHover: $puerto-rico;
+$btnSecondaryActive: $puerto-rico;
+
+$btnAlternative: $eggplant-color;
+$btnAlternativeHover: lighten($eggplant-color, 20%);
+$btnAlternativeAcive: lighten($eggplant-color, 20%);
+
+$dimWhiteColor: #eaeaea;
+$alternativeBgColor: #f5f0f5;
+$borderColor: #707070;
+
+$antDesignZindex: 1035;
+$basicLayoutHeaderZindex: ($antDesignZindex + 1);
+$antModalMaskZindex: $basicLayoutHeaderZindex + 1;
+$antMondalWrapZIndex: $antModalMaskZindex + 1;
+
+$multiRaceBet-tabBg: #232e63;
+$multiRaceBet-tabBg--active: #4c62eb;
+$multiRaceBet-tabBg--invalid: #f9819c;

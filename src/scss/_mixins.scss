@@ -1,0 +1,33 @@
+// Media queries
+@mixin rwd-to($break-point) {
+  @media only screen and (max-width: $break-point - 1 + px) {
+    @content;
+  }
+}
+@mixin rwd-to-h($break-point) {
+  @media only screen and (max-height: $break-point + px) {
+    @content;
+  }
+}
+@mixin rwd-from($break-point) {
+  @media only screen and (min-width: $break-point + px) {
+    @content;
+  }
+}
+@mixin rwd-from-to($break-point1, $break-point2) {
+  @media only screen and (min-width: $break-point1 + px) and (max-width: $break-point2 - 1 + px) {
+    @content;
+  }
+}
+@mixin rwd-from-width-height($break-point-width, $break-point-height) {
+  @media only screen and (min-width: $break-point-width + px) and (min-height: $break-point-height + px) {
+    @content;
+  }
+}
+
+// Misc
+@mixin sq-list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,26 @@
+.login-page-wrapper {
+  display: flex;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include rwd-from($breakpoint-m) {
+    width: 40%;
+    padding: 0 10%;
+
+    min-height: 100vh;
+    display: flex;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  div[aria-labelledby='pwa-prompt-title'] p[class] {
+    color: $white-color;
+  }
+  #pwa-prompt-title + button {
+    color: $black-color;
+  }
+}

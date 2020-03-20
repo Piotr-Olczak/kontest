@@ -1,0 +1,57 @@
+.race-block {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 200px;
+ background-color: #fff;
+ border-radius: 5px;
+ border: 1px solid $dimWhiteColor;
+ box-shadow: 0 8px 20px rgba(#000, 0.04);
+ transition: all 0.2s ease-out;
+ cursor: pointer;
+ &:hover {
+  border-color: rgba($eggplant-color, 0.62);
+  background-color: $alternativeBgColor;
+  box-shadow: 0 8px 25px rgba(#623c62, 0.29);
+  .race-block__price {
+   color: $eggplant-color;
+  }
+ }
+ &__header {
+  display: flex;
+  padding: 1em 0 0;
+  flex-direction: column;
+  align-items: center;
+ }
+ &__id {
+  font-size: 50px;
+  margin: 0;
+  line-height: 100%;
+  font-weight: 700;
+  color: $eggplant-color;
+  background-image: url("~assets/svg/shape-hex-transparent.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+ &__price {
+  font-size: 28px;
+  font-weight: 700;
+  color: $dark-color;
+ }
+ &__footer {
+  border-top: 1px solid rgba($borderColor, 0.18);
+  font-weight: 500;
+  padding: 0.5em;
+  width: 100%;
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: $dark-color;
+  transition: all 0.2s ease-out;
+  img {
+   margin-right: 0.5em;
+  }
+ }
+}

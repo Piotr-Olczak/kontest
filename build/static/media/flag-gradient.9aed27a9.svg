@@ -1,0 +1,18 @@
+
+<svg width="17px" height="19px" viewBox="0 0 17 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="65.2844531%" y1="0%" x2="42.5970522%" y2="65.9753574%" id="linearGradient-1">
+            <stop stop-color="#E27F20" offset="0%"></stop>
+            <stop stop-color="#935293" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Trafonline.pl-_-design_concept-[inner-2]" transform="translate(-1065.000000, -571.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(322.000000, 568.000000)">
+                <g id="outline-outlined_flag-24px" transform="translate(743.000000, 3.000000)">
+                    <path d="M10.2,2.23529412 L9.06666667,0 L0,0 L0,19 L2.26666667,19 L2.26666667,11.1764706 L7.93333333,11.1764706 L9.06666667,13.4117647 L17,13.4117647 L17,2.23529412 L10.2,2.23529412 Z M14.7333333,11.1764706 L10.2,11.1764706 L9.06666667,8.94117647 L2.26666667,8.94117647 L2.26666667,2.23529412 L7.93333333,2.23529412 L9.06666667,4.47058824 L14.7333333,4.47058824 L14.7333333,11.1764706 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

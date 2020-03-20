@@ -1,0 +1,54 @@
+.subheader {
+  background-image: url('~assets/images/subHeaderBg.png');
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+    z-index: 1;
+
+    @include rwd-from($breakpoint-m) {
+      flex-direction: row;
+    }
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    @include rwd-from($breakpoint-m) {
+      flex-direction: row;
+    }
+
+    p {
+      margin: 0 1em 0 0;
+    }
+  }
+
+  &__timers {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    > * {
+      margin: 0.5em 0;
+    }
+
+    @include rwd-from($breakpoint-m) {
+      flex-direction: row;
+
+      > * {
+        margin: 0 0.5em;
+      }
+    }
+  }
+}

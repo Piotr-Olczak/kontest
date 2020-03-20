@@ -1,0 +1,330 @@
+$headerHeight: 70px;
+
+.basic-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding-top: $headerHeight;
+
+  &__header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: $basicLayoutHeaderZindex;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: $eggplant-color;
+    width: 100%;
+    height: $headerHeight;
+    box-shadow: rgba($eggplant-color, 0.08) 0 3px 6px;
+
+    &--active {
+      .basic-layout__header {
+        &__navigation {
+          height: calc(100% - #{$headerHeight});
+          padding: 0;
+
+          @include rwd-from($breakpoint-m) {
+            height: auto;
+          }
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+    }
+
+    &__logo {
+      background-color: #fff;
+      margin: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0.75em 0.25em 0.75em 0.75em;
+
+      @include rwd-from($breakpoint-m) {
+        width: 120px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: center;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -10px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $headerHeight 10px 0 0;
+        border-color: rgb(255, 255, 255) transparent transparent transparent;
+      }
+
+      img {
+        max-height: 100%;
+        height: 70px;
+        box-sizing: border-box;
+      }
+    }
+
+    &__navigation {
+      z-index: 10;
+      position: fixed;
+      top: $headerHeight;
+      left: 0;
+      background-color: $eggplant-color;
+      width: 100vw;
+      margin: 0;
+      padding: 0 1em;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.2s ease-out;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      @include rwd-from($breakpoint-m) {
+        position: relative;
+        display: block;
+        top: 0;
+        height: auto;
+        width: 100%;
+        background-color: transparent;
+      }
+
+      .main-nav {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        height: 100%;
+        overflow: auto;
+        margin-bottom: 57px;
+
+        @include rwd-from($breakpoint-m) {
+          height: $headerHeight;
+          display: flex;
+          justify-content: center;
+          position: fixed;
+          left: 135px;
+          top: 0;
+          overflow: visible;
+          margin-bottom: 0;
+        }
+
+        @include rwd-from(1500) {
+          left: calc((100vw - #{$container-l}) / 2);
+        }
+
+        &__element {
+          list-style: none;
+          position: relative;
+          border-bottom: 1px solid rgba(#fff, 0.1);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          white-space: nowrap;
+
+          a {
+            padding: 1em 2em;
+            color: inherit;
+            text-decoration: none;
+
+            @include rwd-from($breakpoint-m) {
+              padding-left: 0;
+              padding-right: 0;
+              font-size: 13px;
+            }
+
+            @include rwd-from($breakpoint-l) {
+              padding-left: 0.5em;
+              padding-right: 0.5em;
+              font-size: 16px;
+            }
+
+            @include rwd-from(1580) {
+              padding-left: 1.5em;
+              padding-right: 1.5em;
+            }
+          }
+
+          .icon {
+            width: 15px;
+            display: inline-block;
+
+            @include rwd-from($breakpoint-m) {
+              display: none;
+            }
+
+            img {
+              max-width: 100%;
+
+              path {
+                fill: $secondary-color;
+              }
+            }
+          }
+
+          @include rwd-from($breakpoint-m) {
+            display: flex;
+            align-items: center;
+            color: #fff;
+
+            margin: 0 5px;
+
+            &--active {
+              font-weight: 700;
+
+              &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: $secondary-color;
+                height: 3px;
+              }
+            }
+          }
+
+          @include rwd-from($breakpoint-l) {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+          }
+        }
+      }
+
+      .user-account-nav {
+        &--mobile {
+          @include rwd-from($breakpoint-m) {
+            display: none;
+          }
+        }
+
+        &--regular {
+          display: none;
+
+          @include rwd-from($breakpoint-m) {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0.5em 2em;
+      border-bottom: 1px solid rgba(#fff, 0.1);
+      color: #fff;
+
+      p {
+        margin: 0;
+      }
+
+      @include rwd-from($breakpoint-m) {
+        border-bottom: none;
+        border-right: 1px solid rgba(#fff, 0.4);
+      }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: stretch;
+
+      @include rwd-from($breakpoint-m) {
+        position: absolute;
+        right: 0;
+        top: 6px;
+      }
+
+      @include rwd-from($headerHeight) {
+        color: #fff;
+      }
+    }
+  }
+
+  &__content {
+    background-color: $wild-sand-color;
+    flex: 1;
+
+    &--horse-bg {
+      background: url('~components/BasicLayout/assets/contentBg.png') left 80px
+        no-repeat;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    padding: 0.5em;
+    //background-color: $primary-color;
+    color: #fff;
+    line-height: 130%;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    background-image: url('~components/BasicLayout/assets/footerBg.png');
+    background-size: cover;
+    background-position: center;
+
+    @include rwd-from($breakpoint-m) {
+      padding: 4em 0;
+    }
+
+    > * {
+      z-index: 2;
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      background: rgba(#2c1f2c, 0.93);
+    }
+  }
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+
+  @include rwd-from($breakpoint-m) {
+    padding: 0 30px;
+    flex-direction: row;
+  }
+
+  &__item {
+    margin: 1em 0;
+
+    @include rwd-from($breakpoint-m) {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    color: #fff;
+  }
+
+  .link-external {
+    color: #fff;
+  }
+}

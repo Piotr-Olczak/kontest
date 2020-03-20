@@ -1,0 +1,112 @@
+.register-steps {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  max-width: 400px;
+  padding: 20px 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  &--completed {
+    span.register-steps__step-no {
+      color: $apple-color;
+    }
+  }
+
+  &__step {
+    background-image: url('~assets/svg/shape-hex-transparent.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    width: 41px;
+    &::after {
+      content: '';
+      width: 30px;
+      height: 1px;
+      position: absolute;
+      top: 25px;
+      right: -60px;
+      border-top: 1px dotted $white-color;
+      opacity: 0.5;
+      display: block;
+    }
+    &:last-of-type {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__step-no {
+    color: $white-color;
+    display: block;
+    font-weight: $font-weight-bold;
+    position: absolute;
+    width: 20px;
+    text-align: center;
+    top: 12px;
+    left: calc(50% - 10px);
+    font-size: 21px;
+    opacity: 0.5;
+  }
+
+  &__step-label {
+    font-size: 9px;
+    left: calc(50% - 40px);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: -20px;
+    width: 80px;
+  }
+
+  &__step--active {
+    background-image: url('~assets/svg/shape-hex-white.svg');
+    .register-steps__step-label {
+      font-weight: $font-weight-bold;
+    }
+    .register-steps__step-no {
+      color: $carrot-orange-color;
+      opacity: 1;
+    }
+  }
+  @include rwd-from-width-height($breakpoint-l, $breakpoint-l-height) {
+    position: absolute;
+    right: 75px;
+    max-width: none;
+    flex-direction: column;
+    height: 640px;
+    top: calc(50% - 320px);
+    width: 91px;
+    padding: 0;
+    &__step {
+      width: 91px;
+      height: 113px;
+      background-size: cover;
+      &::after {
+        width: 1px;
+        height: 80px;
+        top: 160px;
+        right: 45px;
+        border-top: 0;
+        border-left: 1px dotted $white-color;
+      }
+    }
+    &__step-label {
+      font-size: 14px;
+      text-transform: none;
+      width: 91px;
+      top: 120px;
+      left: 0;
+    }
+    &__step-no {
+      font-size: 28px;
+      top: 40px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.settings-faq {
+  color: $scorpion-color;
+  margin: 2em 0;
+  line-height: 120%;
+  @include rwd-from($breakpoint-m) {
+    width: 250px;
+  }
+  &__title {
+    font-weight: 600;
+  }
+}

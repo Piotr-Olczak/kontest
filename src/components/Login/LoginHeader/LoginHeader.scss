@@ -1,0 +1,118 @@
+.login-header {
+  color: $white-color;
+  background: #423040;
+  background-image: url('~assets/images/bg-register.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include rwd-from($breakpoint-m) {
+    background: transparent;
+    color: $mine-shaft-color;
+  }
+
+  &__logo-wrapper {
+    background-color: $white-color;
+    display: block;
+    height: 70px;
+    padding-left: 31px;
+    padding-top: 13px;
+    transform: skewX(-10deg) translateX(-15px);
+    width: 121px;
+
+    @include rwd-from($breakpoint-m) {
+      background: transparent;
+      height: auto;
+      width: auto;
+      transform: skewX(0) translateX(0);
+      padding: 0;
+      margin: 85px 0 75px;
+    }
+  }
+
+  &__logo {
+    height: 40.62px;
+    width: 63.1px;
+
+    @include rwd-from($breakpoint-m) {
+      width: 115px;
+      height: 74px;
+    }
+  }
+
+  &__register {
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+
+    @include rwd-from($breakpoint-m) {
+      display: none;
+    }
+  }
+
+  &__register-text {
+    font-size: 14px;
+    opacity: 0.8;
+    padding-right: 20px;
+    margin-top: 1em;
+
+    span {
+      display: none;
+    }
+  }
+
+  &__register-button {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+
+    &::after {
+      position: absolute;
+      border: 2px solid $strikemaster-color;
+      display: block;
+      transform: skewX(-10deg);
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__content-wrapper {
+    padding: 20px $standard-lr-padding;
+    width: 100%;
+
+    @include rwd-from($breakpoint-m) {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    //temp
+    h2 {
+      font-size: 26px;
+      line-height: 35px;
+      margin: 0;
+
+      @include rwd-from($breakpoint-m) {
+        font-size: 46px;
+        line-height: 50px;
+      }
+    }
+
+    p {
+      margin: 10px 0;
+
+      @include rwd-from($breakpoint-m) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.ant-alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// needs to be over header and all the stuff
+.ant-modal-mask {
+  z-index: $antModalMaskZindex;
+}
+
+.ant-modal-wrap {
+  z-index: $antMondalWrapZIndex;
+}

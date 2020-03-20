@@ -1,0 +1,74 @@
+$mobile-breakpoint-table-view: 600;
+
+.financial-operations {
+  border: 1px solid $dimWhiteColor;
+}
+
+.transactions {
+  .ant-table-thead,
+  .ant-table-tbody {
+    & > tr > th,
+    & > tr > td {
+      font-size: 10px;
+      padding: 5px;
+      word-break: break-word;
+      @include rwd-from($mobile-breakpoint-table-view) {
+        font-size: 16px;
+        padding: 16px;
+      }
+    }
+  }
+}
+
+.financial-operation {
+  opacity: 0.5;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px solid $dimWhiteColor;
+  font-weight: 500;
+  font-size: 10px;
+  @include rwd-from($mobile-breakpoint-table-view) {
+    font-size: 16px;
+  }
+  &--done {
+    opacity: 1;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  &:nth-child(even) {
+    background-color: $wild-sand-color;
+  }
+  &--in {
+    .financial-operation__price {
+      color: $apple-color;
+    }
+  }
+
+  &--out {
+    .financial-operation__price {
+      color: $secondary-color;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    flex: 3;
+    img {
+      margin-right: 1em;
+      display: none;
+      @include rwd-from(420) {
+        display: block;
+      }
+    }
+  }
+  &__date {
+    flex: 2;
+  }
+  &__price {
+    flex: 4;
+    text-align: right;
+    font-weight: 700;
+  }
+}

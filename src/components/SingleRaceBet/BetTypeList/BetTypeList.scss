@@ -1,0 +1,35 @@
+.single-bet-types {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include rwd-from($breakpoint-m) {
+    flex-direction: row;
+  }
+  p {
+    margin: 0 1em 0 0;
+    font-weight: 500;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    @include rwd-from($breakpoint-m) {
+      margin: 0 0.5em;
+    }
+    li {
+      margin: 0;
+      padding: 0 0.5em;
+      list-style: none;
+      flex: 1;
+      button {
+        width: 100%;
+        padding: 0.75em 1.5em;
+      }
+      @include rwd-from($breakpoint-m) {
+        width: auto;
+      }
+    }
+  }
+}

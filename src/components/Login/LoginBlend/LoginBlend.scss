@@ -1,0 +1,54 @@
+.login-blend-wrapper {
+  display: none;
+  color: $white-color;
+  width: 60%;
+  min-height: 100vh;
+  padding: 0 95px;
+  background: $eggplant-color;
+  overflow: hidden;
+
+  @include rwd-from($breakpoint-m) {
+    display: flex;
+    background: $eggplant-color;
+  }
+
+  @include rwd-from($breakpoint-l) {
+    background-image: url('~assets/images/running-horse.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+.login-blend {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  z-index: 2;
+  line-height: 1.45;
+
+  @include rwd-from($breakpoint-l) {
+    width: 40%;
+  }
+
+  &__title {
+    font-size: 46px;
+    margin: 0 0 25px;
+    line-height: 1.2;
+  }
+
+  &__post-title {
+    font-weight: $font-weight-light;
+    font-size: 28px;
+    margin: 15px 0 25px;
+  }
+  .btn {
+    text-align: center;
+    margin-top: 2em;
+  }
+}

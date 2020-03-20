@@ -1,0 +1,24 @@
+.register-cookies {
+  &__modal {
+    i {
+      display: none;
+    }
+    .ant-modal-confirm-body
+      > .anticon
+      + .ant-modal-confirm-title
+      + .ant-modal-confirm-content {
+      margin-left: 0;
+    }
+  }
+  &__content {
+    @include rwd-from($breakpoint-m) {
+      height: 30vh;
+      max-height: 402px;
+      overflow-y: scroll;
+    }
+  }
+}
+
+.hidden-cookies-field {
+  display: none;
+}

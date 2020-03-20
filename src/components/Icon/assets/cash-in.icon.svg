@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="42" viewBox="0 0 38 42">
+  <g id="Group_581" data-name="Group 581" transform="translate(-865 -430)">
+    <path id="Polygon_34" data-name="Polygon 34" d="M31.5,0,42,19,31.5,38h-21L0,19,10.5,0Z" transform="translate(903 430) rotate(90)" fill="#d6efd8"/>
+    <g id="Group_482" data-name="Group 482" transform="translate(344.252 134.5)">
+      <g id="outline-money-24px_1_" data-name="outline-money-24px (1)" transform="translate(529 304.5)">
+        <path id="Path_46" data-name="Path 46" d="M0,0H24V24H0Z" fill="none"/>
+        <path id="Path_47" data-name="Path 47" d="M15,16h3a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1H15a1,1,0,0,0-1,1v6A1,1,0,0,0,15,16Zm1-6h1v4H16ZM9,16h3a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1H9A1,1,0,0,0,8,9v6A1,1,0,0,0,9,16Zm1-6h1v4H10ZM5,8H7v8H5ZM2,4V20H22V4ZM20,18H4V6H20Z" fill="#369f3a"/>
+      </g>
+      <g id="outline-arrow_right_alt-24px" transform="translate(479 302.5)">
+        <path id="Path_51" data-name="Path 51" d="M16.01,11H13.748v2H16.01v2.053L20,12,16.01,8.9Z" transform="translate(31 2)" fill="#369f3a"/>
+      </g>
+    </g>
+  </g>
+</svg>

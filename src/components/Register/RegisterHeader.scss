@@ -1,0 +1,154 @@
+.register-header {
+  background-image: url('~assets/images/bg-register.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__logo-wrapper {
+    background-color: $white-color;
+    display: block;
+    height: 70px;
+    padding-left: 31px;
+    padding-top: 13px;
+    transform: skewX(-10deg) translateX(-15px);
+    width: 121px;
+  }
+
+  &__logo {
+    height: 40.62px;
+    width: 63.1px;
+  }
+
+  &__login {
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+  }
+
+  &__login-text {
+    font-size: 14px;
+    opacity: 0.8;
+    padding-right: 20px;
+    margin-top: 1em;
+
+    span {
+      display: none;
+    }
+  }
+
+  &__login-button {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+
+    &::after {
+      position: absolute;
+      border: 2px solid $strikemaster-color;
+      display: block;
+      transform: skewX(-10deg);
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    padding: 21px;
+    line-height: 1.278;
+
+    &-header {
+      font-size: 28px;
+      font-weight: $font-weight-bold;
+      margin-top: 0;
+      color: $white-color;
+    }
+
+    &-main {
+      font-size: 18px;
+      font-weight: $font-weight-light;
+    }
+
+    &-extra {
+      display: none;
+    }
+  }
+
+  @include rwd-from-width-height($breakpoint-l, $breakpoint-l-height) {
+    width: 50%;
+    height: 100vh;
+    max-height: 100vh;
+    display: block;
+    position: sticky;
+    top: 0;
+
+    &__logo-wrapper {
+      width: 186px;
+      height: 107px;
+      padding-left: 52px;
+      padding-top: 21px;
+    }
+
+    &__logo {
+      width: 94px;
+      height: 61px;
+    }
+
+    &__login {
+      position: absolute;
+      bottom: 73px;
+      left: 108px;
+    }
+
+    &__login-text {
+      font-size: 16px;
+      padding-right: 5px;
+
+      span {
+        display: inline;
+      }
+    }
+
+    &__login-button {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      text-decoration: underline;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &__content {
+      padding-left: 108px;
+      padding-top: 144px;
+      max-width: 490px;
+
+      &-header {
+        font-size: 65px;
+        margin-bottom: 30px;
+      }
+
+      &-main {
+        font-size: 28px;
+      }
+
+      &-extra {
+        font-size: 18px;
+        display: block;
+      }
+    }
+  }
+}

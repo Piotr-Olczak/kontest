@@ -1,0 +1,30 @@
+.logout-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -6px -5px 14px -1px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+
+  @include rwd-from($breakpoint-m) {
+    position: relative;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+    justify-content: normal;
+  }
+
+  img {
+    margin-right: 15px;
+  }
+}

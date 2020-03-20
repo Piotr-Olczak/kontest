@@ -1,0 +1,146 @@
+.race-block {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 180px;
+ background-color: #fff;
+ border-radius: 5px;
+ border: 1px solid $dimWhiteColor;
+ box-shadow: 0 8px 20px rgba(#000, 0.04);
+ transition: all 0.2s ease-out;
+ cursor: pointer;
+
+ @include rwd-from($breakpoint-s) {
+  width: 200px;
+ }
+
+ &:hover {
+  border-color: rgba($eggplant-color, 0.62);
+  background-color: $alternativeBgColor;
+  box-shadow: 0 8px 25px rgba($eggplant-color, 0.29);
+
+  .race-block__price {
+   color: $eggplant-color;
+  }
+
+  .race-block__id {
+   background-color: $eggplant-color;
+   color: #fff;
+
+   &:after {
+    border-top-color: $eggplant-color;
+   }
+
+   &:before {
+    border-bottom-color: $eggplant-color;
+   }
+  }
+ }
+
+ &__header {
+  display: flex;
+  padding: 1em 0 0;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ &__id {
+  font-size: 50px;
+  margin: 0;
+  line-height: 100%;
+  font-weight: 700;
+  color: $eggplant-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 85px;
+  height: 49.07px;
+  background-color: $alternativeBgColor;
+  margin: 24.54px 0;
+  text-align: center;
+
+  &:after {
+   content: "";
+   position: absolute;
+   width: 0;
+   border-left: 42.5px solid transparent;
+   border-right: 42.5px solid transparent;
+   top: 100%;
+   width: 0;
+   border-top: 24.54px solid $alternativeBgColor;
+   left: 0;
+  }
+
+  &:before {
+   content: "";
+   position: absolute;
+   width: 0;
+   border-left: 42.5px solid transparent;
+   border-right: 42.5px solid transparent;
+   bottom: 100%;
+   border-bottom: 24.54px solid $alternativeBgColor;
+   left: 0;
+  }
+ }
+
+ &__price {
+  font-size: 28px;
+  font-weight: 700;
+  color: $dark-color;
+  margin: 5px 0px 7px;
+ }
+
+ &__footer {
+  border-top: 1px solid rgba($borderColor, 0.18);
+  font-weight: 500;
+  padding: 0.5em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: $dark-color;
+  transition: all 0.2s ease-out;
+
+  img {
+   margin-right: 0.5em;
+  }
+ }
+}
+
+.races {
+ &__title {
+  font-size: 18px;
+  color: $dark-color;
+
+  strong {
+   text-transform: uppercase;
+  }
+ }
+
+ &__list {
+  display: flex;
+  // align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  margin: 1em 0em;
+  padding: 0;
+
+  @include rwd-from($breakpoint-s) {
+   margin-left: -1em;
+   margin-right: -1em;
+  }
+
+  li {
+   margin: 1em 0;
+   padding: 1.5em 5px 2em;
+   list-style: none;
+   display: flex;
+   @include rwd-from($breakpoint-s) {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+   }
+  }
+ }
+}

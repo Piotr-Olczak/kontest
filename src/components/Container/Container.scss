@@ -1,0 +1,15 @@
+// main styles
+
+.container {
+  width: 100%;
+  padding: 2em 15px;
+  position: relative;
+  @include rwd-from($breakpoint-m) {
+    width: $container-m;
+    margin: 0 auto;
+    display: block;
+  }
+  @include rwd-from($breakpoint-l) {
+    width: $container-l;
+  }
+}

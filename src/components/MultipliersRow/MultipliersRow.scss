@@ -1,0 +1,57 @@
+.multipliers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include rwd-from($breakpoint-m) {
+    flex-direction: row;
+  }
+  p {
+    margin: 1em 0;
+    font-weight: 500;
+    @include rwd-from($breakpoint-m) {
+      margin: 0 2em 0 0;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    button {
+      @include rwd-from($breakpoint-m) {
+        width: 20px;
+        box-sizing: content-box;
+      }
+    }
+    .custom-btn {
+      width: auto;
+      @include rwd-from($breakpoint-m) {
+        width: auto;
+      }
+    }
+    > * {
+      flex: 1;
+      @include rwd-from($breakpoint-m) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.multiplier-form {
+  display: flex;
+  align-items: center;
+  .form-element {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  label {
+    margin: 0 1em 0 0;
+  }
+  input[type='number'] {
+    width: 70px;
+    padding: 0.5em 0.5em;
+  }
+  button {
+    padding: 0.5em 1em;
+  }
+}

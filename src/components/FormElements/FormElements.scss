@@ -1,0 +1,259 @@
+@mixin formElementStyles {
+  border: 1px solid $bon-jour-color;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 3px 6px;
+}
+
+.form-elements {
+  font-size: 16px;
+}
+
+.form-element {
+  margin-bottom: 22px;
+
+  &__label {
+    color: $mine-shaft-color;
+    display: block;
+    font-size: 14px;
+    font-weight: $font-weight-medium;
+    margin-bottom: 7px;
+  }
+
+  input[type='text'],
+  input[type='number'],
+  input[type='email'],
+  input[type='number'],
+  input[type='password'],
+  &__basic-data-password {
+    @include formElementStyles;
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+    padding-right: 44px;
+
+    &:disabled {
+      background-color: $gallery-color;
+      color: rgba(62, 62, 62, 0.52);
+      cursor: not-allowed;
+    }
+  }
+
+  input[type='password'] {
+    background-image: url('~assets/svg/icon-eye.svg');
+    background-position: calc(100% - 16px) calc(50% + 2px);
+    background-repeat: no-repeat;
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    display: none;
+
+    + label {
+      font-size: 14px;
+      padding-left: 40px;
+      padding-right: 5px;
+      padding-top: 7px;
+      position: relative;
+      display: block;
+      font-weight: $font-weight-medium;
+      line-height: 1.5;
+      margin-bottom: 20px;
+
+      &::before {
+        background-color: $white-color;
+        @include formElementStyles();
+        display: block;
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: 2px;
+      }
+    }
+
+    &:checked {
+      + label::before {
+        background-image: url('~assets/svg/icon-tick.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+      }
+    }
+  }
+
+  select {
+    @include formElementStyles();
+    background-color: $white-color;
+    height: 53px;
+    color: rgba(62, 62, 62, 0.8);
+    width: 100%;
+    background-image: url('~assets/svg/icon-down-arrow.svg');
+    background-position: calc(100% - 8px) 50%;
+    background-repeat: no-repeat;
+    background-size: 13px 8px;
+    appearance: none;
+    padding-left: 13px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: $font-weight-regular;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  &--invalid {
+    input[type='text'],
+    input[type='email'],
+    input[type='password'] {
+      border-color: $error-color;
+      background-image: url('~assets/svg/icon-red-close.svg');
+      background-position: calc(100% - 16px) calc(50% + 2px);
+      background-repeat: no-repeat;
+    }
+
+    input[type='password'],
+    input#password[type='text'] {
+      background-image: none;
+    }
+    input[type='checkbox'] + label::before {
+      border-color: $error-color;
+    }
+    select {
+      border-color: $error-color;
+    }
+  }
+
+  &--valid {
+    input[type='text'],
+    input[type='email'],
+    input[type='password'] {
+      background-image: url('~assets/svg/icon-tick.svg');
+      background-position: calc(100% - 16px) calc(50% + 2px);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__error-message {
+    margin-top: 5px;
+    font-size: 12px;
+    color: $error-color;
+    font-weight: $font-weight-medium;
+  }
+
+  /* field specific */
+  &__date-select {
+    height: 53px;
+  }
+
+  &--password {
+    position: relative;
+
+    &-wrapper {
+      position: relative;
+    }
+
+    input[type='password'] {
+      background-image: none;
+    }
+  }
+
+  &__password-toggle {
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+    background: none;
+    border: 0;
+    width: 44px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: relative;
+      top: 1px;
+      right: 0px;
+    }
+  }
+}
+
+.player-limit {
+  position: relative;
+  padding-bottom: 22px;
+  .form-element__label {
+    font-size: 15px;
+    font-weight: $font-weight-medium;
+  }
+  &__fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__field {
+    position: relative;
+    span {
+      position: absolute;
+      right: 6px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      bottom: 0;
+      opacity: 0.5;
+    }
+  }
+  &__field-amount {
+    width: 100%;
+  }
+  &__field-hours {
+    width: calc(50% - 5px);
+  }
+  &__field-minutes {
+    width: calc(50% - 5px);
+  }
+  @include rwd-to($breakpoint-m) {
+    width: calc(50% - 10px);
+  }
+  @include rwd-from($breakpoint-l) {
+    .form-element__label {
+      font-size: 14px;
+    }
+    &__field {
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.bank-account-number__field {
+  position: relative;
+  input[type='text'] {
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  span {
+    position: absolute;
+    left: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    opacity: 0.5;
+  }
+}
+
+/* Sample form styles */
+.form-elements--sample {
+  padding: 50px;
+}

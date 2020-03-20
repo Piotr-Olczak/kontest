@@ -1,0 +1,13 @@
+.form-block {
+  margin: 25px 0;
+}
+
+.form-status {
+  &--error {
+    color: $error-color;
+  }
+
+  &--success {
+    color: $success-color;
+  }
+}

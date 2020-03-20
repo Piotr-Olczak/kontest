@@ -1,0 +1,38 @@
+ul.status-handler {
+  margin: 10px 10px 0;
+  padding: 0;
+  list-style: none;
+  li {
+    padding: 20px 20px 10px;
+    margin: 0 0 10px;
+    overflow: hidden;
+  }
+}
+
+.status-handler__status--success {
+  background: lightgreen;
+  border: 1px solid green;
+}
+
+.status-handler__status--warning {
+  background: orange;
+  border: 1px solid orangered;
+}
+
+.status-handler__status--error {
+  background: indianred;
+  border: 1px solid red;
+}
+
+.status-handler__status-button--close {
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: right;
+  cursor: pointer;
+  outline: 0;
+}
