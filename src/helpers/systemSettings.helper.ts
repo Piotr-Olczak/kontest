@@ -4,8 +4,8 @@ import { SystemSettingsShape } from 'interfaces/interfaces';
 import { apiGetData } from 'helpers/apiConnector';
 
 class SystemSettingsHelper {
-  fetchSystemSettings(): Promise<SystemSettingsShape> {
-    return apiGetData('/player-public/get-system-settings');
+    fetchSystemSettings(): Promise<SystemSettingsShape> {
+        return apiGetData('/player-public/get-system-settings');
   }
   /**
    * This method creates the settings for the selected race type ( according to systemSettings ) and returns it;

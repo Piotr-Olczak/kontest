@@ -21,8 +21,9 @@ const LoginBlend: React.FC = () => {
         rywalizacji sportowej.
       </p>
       <Link to={APP_URLS.register} className="btn btn--full">
-        Zarejestruj się
+              Zarejestruj się
       </Link>
+      <a href="https://www.youtube.com/watch?v=MgaDJuK2DA0" className="btn btn--full">Instrukcja video</a>
     </div>
   );
 };
