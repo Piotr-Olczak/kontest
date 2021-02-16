@@ -30,7 +30,10 @@ export const BetTypeList: React.FC<BetTypeList> = props => {
               onClick={handleTypeChange.bind(null, betType)}
             >
               {betType.betTypeButtonLabel}
-            </BtnColor>
+                </BtnColor>
+
+                Tooltip
+
           </li>
         ))}
       </ul>

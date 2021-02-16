@@ -1,0 +1,62 @@
+.single-bet-types {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include rwd-from($breakpoint-m) {
+    flex-direction: row;
+  }
+  p {
+    margin: 0 1em 0 0;
+    font-weight: 500;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    @include rwd-from($breakpoint-m) {
+      margin: 0 0.5em;
+    }
+    li {
+      margin: 0;
+      padding: 0 0.5em;
+      list-style: none;
+      flex: 1;
+      button {
+        width: 100%;
+        padding: 0.75em 1.5em;
+      }
+      @include rwd-from($breakpoint-m) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.tooltip {
+    &:after {
+        content: "";
+        position: absolute;
+        /* position tooltip correctly */
+        left: 100%;
+        margin-left: -5px;
+        /* vertically center */
+        top: 50%;
+        transform: translateY(-50%);
+        /* the arrow */
+        border: 10px solid #000;
+        border-color: transparent black transparent transparent;
+        display: none;
+    }
+
+    &:hover {
+        &:before {
+            display: block;
+        }
+
+        &:after {
+            display: block;
+        }
+    }
+}

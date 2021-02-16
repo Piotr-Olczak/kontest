@@ -3,13 +3,11 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\AppState",
-    "\\src\\components\\BtnColor",
-    "\\src\\components\\Button",
-    "\\src\\components\\ChangePasswordForm",
-    "\\src\\components\\Login\\LoginBlend",
-    "\\src\\helpers"
+    "\\src\\components\\Logo",
+    "\\src\\components\\SingleRaceBet",
+    "\\src\\components\\SingleRaceBet\\BetTypeList",
+    "\\src\\components\\SingleRaceBet\\BetTypeTooltip"
   ],
-  "SelectedNode": "\\src\\helpers\\systemSettings.helper.ts",
+  "SelectedNode": "\\src\\components\\SingleRaceBet\\BetTypeTooltip\\BetTypeList.scss",
   "PreviewInSolutionExplorer": false
 }
