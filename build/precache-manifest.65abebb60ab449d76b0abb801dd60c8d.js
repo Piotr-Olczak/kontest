@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9792c054561f8a8a8a1d067233be62f8",
+    "revision": "734052ad29fe7a1e24873091d1c2d0c4",
     "url": "/__data/assets/git_bridge/0013/9013/build/index.html"
   },
   {
-    "revision": "2a80d3981dc27ca2a41e",
+    "revision": "75d72c699396ff17e46b",
     "url": "/__data/assets/git_bridge/0013/9013/build/static/css/2.dce6034f.chunk.css"
   },
   {
-    "revision": "1d57699221fdf785e3d3",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/css/main.12507229.chunk.css"
+    "revision": "720b6735d5232210a920",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/css/main.b60ebc8d.chunk.css"
   },
   {
-    "revision": "2a80d3981dc27ca2a41e",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/2.e6699d28.chunk.js"
+    "revision": "75d72c699396ff17e46b",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/2.378163a4.chunk.js"
   },
   {
-    "revision": "1d57699221fdf785e3d3",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/main.453ab926.chunk.js"
+    "revision": "720b6735d5232210a920",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/main.34c9029a.chunk.js"
   },
   {
     "revision": "7b08ec4c057de6ebaf50",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/bg-register.edb84bee.jpg"
   },
   {
-    "revision": "75b012e3f67e2c396c74c4685cc6ea8c",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/cash-in.icon.75b012e3.svg"
+    "revision": "c2ffb570c335527875ecdcc4c07a7651",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/cash-in.icon.c2ffb570.svg"
   },
   {
-    "revision": "004893a6c5aa745f1a1cca238dda10be",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/cash-out.icon.004893a6.svg"
+    "revision": "e538597d335c1baae190d221bd7becd6",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/cash-out.icon.e538597d.svg"
   },
   {
     "revision": "d2535b4d4f22f31f0da582d4541dbc5a",
@@ -48,16 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/contentBg.3a5fd867.png"
   },
   {
-    "revision": "06660860063e1060ae8e3782890a9493",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/document-gradient.06660860.svg"
+    "revision": "6c62fc03c79c60ce87ea6bcbaa14dea4",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/document-gradient.6c62fc03.svg"
   },
   {
     "revision": "b33405a51170098c65f86aea118771eb",
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/eye.icon.b33405a5.svg"
   },
   {
-    "revision": "9aed27a96fa1bbd891a55a7ebe3a4042",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/flag-gradient.9aed27a9.svg"
+    "revision": "f8b1c3bc33f7375fa877245487bf5780",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/flag-gradient.f8b1c3bc.svg"
   },
   {
     "revision": "81470900eab08e461839342783df9603",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/logo-traf.3816ceb6.svg"
   },
   {
-    "revision": "322e326c75f4579ccede0e7f6f4ee03b",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/money-100-gradient.322e326c.svg"
+    "revision": "5862fbfdc4819f603a4f2c5f41fc6388",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/money-100-gradient.5862fbfd.svg"
   },
   {
     "revision": "6fa5ef1cc7b164af21e5b774555afc9b",
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/question.icon.8a2775b4.svg"
   },
   {
-    "revision": "b1950c48e6894e2db5ef53b38b57ac22",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/right-arrow.icon.b1950c48.svg"
+    "revision": "10cfc5a6d1eb236bee79fce6d0e54df5",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/right-arrow.icon.10cfc5a6.svg"
   },
   {
     "revision": "38fa5a353ac38c8412c802f13b10c60f",
@@ -136,16 +136,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/settings.icon.ffd44cd1.svg"
   },
   {
-    "revision": "be79774278e5b75c2c731d047b9433ba",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/shape-hex-transparent.be797742.svg"
+    "revision": "95121d1cc041efefe23e4142a53c4048",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/shape-hex-transparent.95121d1c.svg"
   },
   {
-    "revision": "3ad95b955acc4bee0885cc509d39d2c7",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/shape-hex-white.3ad95b95.svg"
+    "revision": "c4aa062f6d5ce409beecfec7bbe83bcd",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/shape-hex-white.c4aa062f.svg"
   },
   {
-    "revision": "1df6a49fac66dbb78113524cde10c49c",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/spinner-circle.icon.1df6a49f.svg"
+    "revision": "08259f52e12b9696e35825ac5ab1047d",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/spinner-circle.icon.08259f52.svg"
   },
   {
     "revision": "f4043268749774d4ca03831c7ba53223",
