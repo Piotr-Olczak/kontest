@@ -35,7 +35,7 @@ const PlayerLimitField: React.FC<PlayerLimitFieldShape> = props => {
         id={name}
         type="number"
         min={0}
-        max={type === 'minutes' ? 59 : 600}
+        max={type === 'minutes' ? 59 : 99999999}
         name={name}
         disabled={disabled}
       />
