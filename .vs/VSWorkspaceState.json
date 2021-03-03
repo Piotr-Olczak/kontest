@@ -5,7 +5,10 @@
     "\\src\\components\\Logo",
     "\\src\\components\\SingleRaceBet",
     "\\src\\components\\SingleRaceBet\\BetTypeList",
-    "\\src\\components\\SingleRaceBet\\BetTypeTooltip"
+    "\\src\\components\\SingleRaceBet\\BetTypeTooltip",
+    "\\src\\schemas",
+    "\\src\\schemas\\validation",
+    "\\src\\schemas\\validation\\forms"
   ],
   "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false

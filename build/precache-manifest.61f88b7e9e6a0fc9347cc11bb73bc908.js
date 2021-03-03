@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "734052ad29fe7a1e24873091d1c2d0c4",
+    "revision": "2478566a837319e926a15a45ccd796ae",
     "url": "/__data/assets/git_bridge/0013/9013/build/index.html"
   },
   {
-    "revision": "75d72c699396ff17e46b",
+    "revision": "f778e959a5f1691bb5bd",
     "url": "/__data/assets/git_bridge/0013/9013/build/static/css/2.dce6034f.chunk.css"
   },
   {
-    "revision": "720b6735d5232210a920",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/css/main.b60ebc8d.chunk.css"
+    "revision": "4598daa9eeac5a3cee94",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/css/main.300970fe.chunk.css"
   },
   {
-    "revision": "75d72c699396ff17e46b",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/2.378163a4.chunk.js"
+    "revision": "f778e959a5f1691bb5bd",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/2.74c08422.chunk.js"
   },
   {
-    "revision": "720b6735d5232210a920",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/main.34c9029a.chunk.js"
+    "revision": "4598daa9eeac5a3cee94",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/main.9a385a78.chunk.js"
   },
   {
     "revision": "7b08ec4c057de6ebaf50",
@@ -98,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3816ceb61018e594266e67fdb0ae4a93",
     "url": "/__data/assets/git_bridge/0013/9013/build/static/media/logo-traf.3816ceb6.svg"
+  },
+  {
+    "revision": "3816ceb61018e594266e67fdb0ae4a93",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/media/logo-traf.icon.3816ceb6.svg"
   },
   {
     "revision": "5862fbfdc4819f603a4f2c5f41fc6388",
