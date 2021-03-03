@@ -1,4 +1,6 @@
 import React from 'react';
+
+import TrafHorse from 'components/Icon/assets/logo-traf.icon.svg';
 import Clock from 'components/Icon/assets/clock.icon.svg';
 import Contact from 'components/Icon/assets/contact.icon.svg';
 import Eye from 'components/Icon/assets/eye.icon.svg';
@@ -39,6 +41,7 @@ export type IconType =
   | 'spinner'
   | 'right-arrow'
   | 'horse'
+  | 'traf-logo'
   | 'thumbup'
   | 'forbidden-mark'
   | 'forbidden-mark--purple'
@@ -77,6 +80,7 @@ export const Icon: React.FC<Icon> = props => {
     spinner: Spinner,
     eye: Eye,
     horse: Horse,
+    'traf-logo': TrafHorse,
     'cash-in': CashIn,
     'cash-out': CashOut,
     'document-gradient': DocumentGradient,

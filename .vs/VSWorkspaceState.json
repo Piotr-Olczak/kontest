@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
     "\\src\\components",
     "\\src\\components\\Logo",
     "\\src\\components\\SingleRaceBet",
     "\\src\\components\\SingleRaceBet\\BetTypeList",
     "\\src\\components\\SingleRaceBet\\BetTypeTooltip"
   ],
-  "SelectedNode": "\\src\\components\\SingleRaceBet\\BetTypeTooltip\\BetTypeList.scss",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

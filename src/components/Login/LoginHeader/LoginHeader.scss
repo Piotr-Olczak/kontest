@@ -102,8 +102,8 @@
       margin: 0;
 
       @include rwd-from($breakpoint-m) {
-        font-size: 46px;
-        line-height: 50px;
+        font-size: 34px;
+        line-height: 40px;
       }
     }
 

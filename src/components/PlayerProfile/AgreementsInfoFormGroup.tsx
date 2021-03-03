@@ -28,7 +28,7 @@ const AgreementsInfoFormGroup: React.FC<
       title="Zgody informacyjne"
       header="Wyrażam zgodę na przetwarzanie moich danych osobowych w celu otrzymywania od Traf - Zakłady Wzajemne Sp. z o.o. informacji handlowej oraz marketingowej za pomocą środków komunikacji elektronicznej:"
     >
-      <FormElement extraClasses="form-element--full">
+      <FormElement extraClasses="form-element--30">
         <Field
           id="mailMarketingConsent"
           type="checkbox"
@@ -37,7 +37,7 @@ const AgreementsInfoFormGroup: React.FC<
         />
         <label htmlFor="mailMarketingConsent">e-mail</label>
       </FormElement>
-      <FormElement extraClasses="form-element--full">
+      <FormElement extraClasses="form-element--30">
         <Field
           id="smsMarketingConsent"
           type="checkbox"
@@ -46,7 +46,7 @@ const AgreementsInfoFormGroup: React.FC<
         />
         <label htmlFor="smsMarketingConsent">SMS</label>
       </FormElement>
-      <FormElement extraClasses="form-element--full">
+      <FormElement extraClasses="form-element--30">
         <Field
           id="phoneMarketingConsent"
           type="checkbox"
@@ -54,7 +54,8 @@ const AgreementsInfoFormGroup: React.FC<
           checked={phoneMarketingConsent}
         />
         <label htmlFor="phoneMarketingConsent">
-          nr telefonu (w celu realizacji połączeń telefonicznych z Graczem)
+          nr telefonu
+          {/* (w celu realizacji połączeń telefonicznych z Graczem) */}
         </label>
       </FormElement>
     </FormGroup>

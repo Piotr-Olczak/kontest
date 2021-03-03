@@ -95,7 +95,7 @@ export const SlipCoupon: React.FC<{
           <p className="slip-coupon-number">{formatBetNumber(couponNumber)}</p>
         )}
 
-        <Icon type={'horse'} />
+        <Icon type={'traf-logo'} />
       </div>
 
       {printDate && <p className="slip-coupon-date">{printDate}</p>}

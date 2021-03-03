@@ -40,5 +40,6 @@ export const CONTENT_URLS = {
   contact: 'https://www.trafonline.pl/kontakt',
   raceProgram: 'https://www.trafonline.pl/dla-gracza',
   termsTotalizator:
-    'https://www.trafonline.pl/__data/assets/pdf_file/0026/8477/Regulamin_2018_TWK.pdf'
+    'https://www.trafonline.pl/__data/assets/pdf_file/0026/8477/Regulamin_2018_TWK.pdf',
+  home: 'https://trafonline.pl/'
 };

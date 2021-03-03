@@ -113,10 +113,10 @@ export const LayoutHeader: React.FC<{ showMenu?: boolean }> = props => {
             <div className="basic-layout__header__actions">
               <div className="basic-layout__header__user">
                 {state.user.details && (
-                  <p>
+                  <Link to={APP_URLS.deposit}>
                     Witaj{' '}
                     <strong>{state.user.details.basicData.firstName}</strong>
-                  </p>
+                  </Link>
                 )}
               </div>
               <LogoutBtn />

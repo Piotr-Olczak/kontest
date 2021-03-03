@@ -223,8 +223,8 @@ $headerHeight: 70px;
       border-bottom: 1px solid rgba(#fff, 0.1);
       color: #fff;
 
-      p {
-        margin: 0;
+      a {
+        color: #fff;
       }
 
       @include rwd-from($breakpoint-m) {
