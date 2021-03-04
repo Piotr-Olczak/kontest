@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2478566a837319e926a15a45ccd796ae",
+    "revision": "ba8c915712b0629c106ca2a5bbf6f1a1",
     "url": "/__data/assets/git_bridge/0013/9013/build/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/css/2.dce6034f.chunk.css"
   },
   {
-    "revision": "4598daa9eeac5a3cee94",
+    "revision": "95d4a343073ef8d2e7d5",
     "url": "/__data/assets/git_bridge/0013/9013/build/static/css/main.300970fe.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/__data/assets/git_bridge/0013/9013/build/static/js/2.74c08422.chunk.js"
   },
   {
-    "revision": "4598daa9eeac5a3cee94",
-    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/main.9a385a78.chunk.js"
+    "revision": "95d4a343073ef8d2e7d5",
+    "url": "/__data/assets/git_bridge/0013/9013/build/static/js/main.b9e51d52.chunk.js"
   },
   {
     "revision": "7b08ec4c057de6ebaf50",
